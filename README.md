@@ -62,6 +62,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#tests">Tests</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -159,6 +160,16 @@ Approvers can approve transfer requests:
 When the minimum quorum of approvals is reached, the transfer is automatically sent:
 
 ![Sent Transfer](./images/transferSent.gif)
+
+<!-- TESTS -->
+
+## Tests
+
+You can see all the tests inside the test folder. The tests were all made using Truffle and Web3. To run the tests simply use:
+
+```sh
+truffle test
+```
 
 <!-- ROADMAP -->
 
