@@ -159,6 +159,7 @@ Approvers can approve transfer requests:
 When the minimum quorum of approvals is reached, the transfer is automatically sent:
 
 ![Sent Transfer](./images/transferSent.gif)
+
 <!-- ROADMAP -->
 
 ## Roadmap
@@ -214,4 +215,4 @@ Project Link: [https://github.com/vinivst/MultisigWallet](https://github.com/vin
 [license-url]: https://github.com/vinivst/MultisigWallet/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/vinivst/
-[product-screenshot]: ./images/screenshot.png
+[product-screenshot]: ./images/screenshot.PNG
