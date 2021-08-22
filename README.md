@@ -24,23 +24,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://desolate-ocean-45261.herokuapp.com/">
-    <img src="https://raw.githubusercontent.com/vinivst/LotteryClient/00e42e4d48bcdd8cdae19d0df1e48d2ab2289824/public/lottery.png" alt="Logo" width="80" height="80">
+  <a href="https://rocky-headland-98667.herokuapp.com/">
+    <img src="./images/wallet.jpg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Lottery Smart Contract</h3>
+  <h3 align="center">Multisig Dapp</h3>
 
   <p align="center">
-    A Lottery demo using Solidity, React, Truffle and Web3.
+    A Multisig Wallet demo using Solidity, React, Truffle and Web3.
     <br />
-    <a href="https://github.com/vinivst/Lottery/#getting-started"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/vinivst/MultisigWallet/#getting-started"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://desolate-ocean-45261.herokuapp.com/">View Demo</a>
+    <a href="https://rocky-headland-98667.herokuapp.com/">View Demo</a>
     ·
-    <a href="https://github.com/vinivst/Lottery/issues">Report Bug</a>
+    <a href="https://github.com/vinivst/MultisigWallet/issues">Report Bug</a>
     ·
-    <a href="https://github.com/vinivst/Lottery/issues">Request Feature</a>
+    <a href="https://github.com/vinivst/MultisigWallet/issues">Request Feature</a>
   </p>
 </p>
 
@@ -74,18 +74,15 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://desolate-ocean-45261.herokuapp.com/)
+[![Product Name Screen Shot][product-screenshot]](https://rocky-headland-98667.herokuapp.com/)
 
-A simple Lottery simulation implemented in Rinkeby Test Network that allows you to:
+A Multisig Wallet implemented in Kovan Test Network that allows you to:
 
-- Buy a ticket for 0.1 ether
-- Check how much is in the Reward Pool
-- Check how many tickets do you have
-- Win big prizes :smile:
-
-There's also a Lottery Pick Winner section that is Owner Visible only, where the owner put a seed (that must be a number) and this is used to calculate the hash of this number and input some randomness in the pick winner function. Of course, this is not production ready, where i should use something like a [Oracle to get random number from outside the chain.](https://docs.chain.link/docs/get-a-random-number/)
-
-I also check for any account's changes in the Metamask to update the UI smoothly. Last, but not least, there's a 10% administration fee for the owner address when the lottery is raffled :stuck_out_tongue_winking_eye:
+- Have your own shared wallet
+- See who the approvers are
+- Requests new transfers
+- Check the status of requested transfers
+- When the amount of approvals reachs the quorum, the transfer is automatically sent
 
 A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
@@ -115,7 +112,7 @@ You need to have npm installed.
 
 1. Clone the repo (--recurse-submodules to include the client's submodule folder)
    ```sh
-   git clone --recurse-submodules https://github.com/vinivst/Lottery.git
+   git clone --recurse-submodules https://github.com/vinivst/MultisigWallet.git
    ```
 2. Install NPM packages in project ("backend")
    ```sh
@@ -145,25 +142,28 @@ You need to have npm installed.
    cd client
    npm start
    ```
-9. Enjoy your own Lottery! :smile:
+9. Enjoy your own Shared Wallet! :smile:
 
 <!-- USAGE EXAMPLES -->
 
-## Usage
+## Usage (Metamask didn't shows in the gifs)
 
-Users can buy tickets (Metamask didn't shows in the gifs):
+Approvers can create a new transfer request:
 
-![Buy Tickets](https://raw.githubusercontent.com/vinivst/LotteryClient/00e42e4d48bcdd8cdae19d0df1e48d2ab2289824/public/buyTicket.gif)
+![Create Transfer Request](./images/createTransfer.gif)
 
-When we have at least 3 participants, the Lottery Owner can pick a winner:
+Approvers can approve transfer requests:
 
-![Pick Winner](https://raw.githubusercontent.com/vinivst/LotteryClient/00e42e4d48bcdd8cdae19d0df1e48d2ab2289824/public/pickWinner.gif)
+![Approve Transfer Request](./images/approveTransfer.gif)
 
+When the minimum quorum of approvals is reached, the transfer is automatically sent:
+
+![Sent Transfer](./images/transferSent.gif)
 <!-- ROADMAP -->
 
 ## Roadmap
 
-See the [open issues](https://github.com/vinivst/Lottery/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/vinivst/MultisigWallet/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 
@@ -189,7 +189,7 @@ Distributed under the GNU GPLv3 License. See `LICENSE` for more information.
 
 Vinicius Santiago - [Linkedin](https://www.linkedin.com/in/vinivst/)
 
-Project Link: [https://github.com/vinivst/Lottery](https://github.com/vinivst/Lottery)
+Project Link: [https://github.com/vinivst/MultisigWallet](https://github.com/vinivst/MultisigWallet)
 
 <!-- ACKNOWLEDGEMENTS -->
 
@@ -202,16 +202,16 @@ Project Link: [https://github.com/vinivst/Lottery](https://github.com/vinivst/Lo
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/vinivst/Lottery.svg?style=for-the-badge
-[contributors-url]: https://github.com/vinivst/Lottery/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/vinivst/Lottery.svg?style=for-the-badge
-[forks-url]: https://github.com/vinivst/Lottery/network/members
-[stars-shield]: https://img.shields.io/github/stars/vinivst/Lottery.svg?style=for-the-badge
-[stars-url]: https://github.com/vinivst/Lottery/stargazers
-[issues-shield]: https://img.shields.io/github/issues/vinivst/Lottery.svg?style=for-the-badge
-[issues-url]: https://github.com/vinivst/Lottery/issues
-[license-shield]: https://img.shields.io/github/license/vinivst/Lottery.svg?style=for-the-badge
-[license-url]: https://github.com/vinivst/Lottery/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/vinivst/MultisigWallet.svg?style=for-the-badge
+[contributors-url]: https://github.com/vinivst/MultisigWallet/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/vinivst/MultisigWallet.svg?style=for-the-badge
+[forks-url]: https://github.com/vinivst/MultisigWallet/network/members
+[stars-shield]: https://img.shields.io/github/stars/vinivst/MultisigWallet.svg?style=for-the-badge
+[stars-url]: https://github.com/vinivst/MultisigWallet/stargazers
+[issues-shield]: https://img.shields.io/github/issues/vinivst/MultisigWallet.svg?style=for-the-badge
+[issues-url]: https://github.com/vinivst/MultisigWallet/issues
+[license-shield]: https://img.shields.io/github/license/vinivst/MultisigWallet.svg?style=for-the-badge
+[license-url]: https://github.com/vinivst/MultisigWallet/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/vinivst/
-[product-screenshot]: https://raw.githubusercontent.com/vinivst/LotteryClient/00e42e4d48bcdd8cdae19d0df1e48d2ab2289824/public/product-screenshot.png
+[product-screenshot]: ./images/screenshot.png
