@@ -76,7 +76,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://rocky-headland-98667.herokuapp.com/)
 
-A Multisig Wallet implemented in Kovan Test Network that allows you to:
+A Multisig Wallet implemented in Rinkeby Test Network that allows you to:
 
 - Have your own shared wallet
 - See who the approvers are
